@@ -1,4 +1,4 @@
-<!--
+
  Proxy Scraper
 
 Created by Joe Shenouda (www.shenouda.nl)
@@ -53,7 +53,7 @@ To target a different website for proxy scraping, modify the `proxy_scraper.py` 
  License
 
 This project is released under the MIT License. See the `LICENSE` file for more information.
--->
+
 
 
 
