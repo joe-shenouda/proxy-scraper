@@ -9,12 +9,21 @@ A lightweight, single-site focused proxy scraper tool that efficiently generates
 
 - Scrapes proxies from a single, targeted website
 - Generates a `proxies.txt` file containing the scraped proxies
-- Easy to use with minimal configuration required --> python proxy_scraper.py
+- Easy to use with minimal configuration required
 
  Requirements
 
 - Python 3.x
 - Elevated privileges (to create and modify the `proxies.txt` file)
+
+ Dependencies
+
+- BeautifulSoup4
+- Requests
+
+You can install these dependencies using `requirements.txt` by running `pip install -r requirements.txt`.
+
+ Usage
 
  Installation
 
