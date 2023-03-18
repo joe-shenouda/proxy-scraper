@@ -1,61 +1,22 @@
-
-# Proxy Scraper
+# Simple Proxy Scraper
 
 Created by Joe Shenouda (www.shenouda.nl)
 
-A lightweight, single-site focused proxy scraper tool that efficiently generates a `proxies.txt` file containing a list of proxy addresses. This tool is perfect for those who require a simple yet effective proxy scraper without any unnecessary overhead.
+This is a simple proxy scraper script that fetches proxies from various sources and saves them to a file named "proxies.txt". After the script finishes running, it displays a message to the user indicating that the file has been created.
 
-# Features
+## Features
 
-- Scrapes proxies from a single, targeted website
-- Generates a `proxies.txt` file containing the scraped proxies
-- Easy to use with minimal configuration required
+- Fetches proxies from multiple sources
+- Supports HTTP, SOCKS4, and SOCKS5 proxies
+- Saves the scraped proxies to a text file
 
-# Requirements
+## Usage
 
-- Python 3.x
-- Elevated privileges (to create and modify the `proxies.txt` file)
-
-# Dependencies
-
-- BeautifulSoup4
-- Requests
-
-You can install these dependencies using `requirements.txt` by running `pip install -r requirements.txt`.
-
-# Installation
-
-1. Clone the repository to your local machine:
-git clone https://github.com/yourusername/proxy-scraper.git
-
-2. Change the directory to the `proxy-scraper` folder:
-cd proxy-scraper
-
-3. (Optional) Create and activate a virtual environment to run the script in:
-python -m venv venv
-venv\Scripts\activate (Windows)
-source venv/bin/activate (Linux)
-
-4. Install the required Python packages:
-5. pip install -r requirements.txt
-
-# Usage
-
-1. Run the script with elevated privileges:
-
-   - On Windows, open a command prompt or PowerShell window with "Run as Administrator" and navigate to the `proxy-scraper` folder.
-
-   - On Linux, use `sudo` before the command or run the terminal as root.
-
-2. Execute the `proxy_scraper.py` script: 
-
-python proxy_scraper.py
-
-3. The script will scrape proxies from the targeted website and save them to the `proxies.txt` file in the same directory.
-
-# Customization
-
-To target a different website for proxy scraping, modify the `proxy_scraper.py` script with the desired URL and parsing logic according to the new website's structure.
+1. Ensure you have Python 3.7 or higher installed on your system. You can check the installed version by running `python --version` or `python3 --version` in your command line or terminal.
+2. Install the `httpx` library, which is required to make HTTP requests, by running the following command: `pip install httpx` or `pip3 install httpx`.
+3. Save the provided script to a file named `simple_proxy_scraper.py`.
+4. Run the script using the command `python simple_proxy_scraper.py` or `python3 simple_proxy_scraper.py`.
+5. Upon completion, the script will display a message "Proxies have been saved to proxies.txt", and the proxies will be saved in the "proxies.txt" file in the same directory as the script.
 
 # License
 
