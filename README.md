@@ -1,16 +1,26 @@
-# Windows-Security-Checks
-
-This PowerShell script performs security checks on a Windows system, checking for Windows Defender status, firewall status, user account control (UAC) settings, automatic updates, BitLocker status, guest account status, network sharing, PowerShell execution policy, Secure Boot, SMBv1, RDP, Local Administrator Password Solution (LAPS), and audit policy. The script generates a report with the results and outputs it to a text file. This tool can be used to quickly check the security posture of a Windows system and identify any potential issues that need to be addressed. Use at your own risk.
+# Simple Proxy Scraper
 
 Created by Joe Shenouda (www.shenouda.nl)
 
+This is a simple proxy scraper script that fetches proxies from various sources and saves them to a file named "proxies.txt". After the script finishes running, it displays a message to the user indicating that the file has been created.
+
+## Features
+
+- Fetches proxies from multiple sources
+- Supports HTTP, SOCKS4, and SOCKS5 proxies
+- Saves the scraped proxies to a text file
+
 ## Usage
 
-1. Save the script as a PowerShell file (e.g. check.ps1).
-2. Open PowerShell as an administrator.
-3. Navigate to the directory where the script is saved.
-4. Run the script using the command `PowerShell.exe -ExecutionPolicy Bypass -File "C:\path\to\check.ps1"`.
-5. Follow the prompts.
+1. Ensure you have Python 3.7 or higher installed on your system. You can check the installed version by running `python --version` or `python3 --version` in your command line or terminal.
+2. Install the `httpx` library, which is required to make HTTP requests, by running the following command: `pip install httpx` or `pip3 install httpx`.
+3. Save the provided script to a file named `proxy_scraper.py`.
+4. Run the script using the command `python proxy_scraper.py` or `python3 proxy_scraper.py`.
+5. Upon completion, the script will display a message "Proxies have been saved to proxies.txt", and the proxies will be saved in the "proxies.txt" file in the same directory as the script.
+
+# License
+
+This project is released under the MIT License. See the `LICENSE` file for more information.
 
 ## Support
 
@@ -20,6 +30,6 @@ If you would like to support this project, you can make a donation through PayPa
 
 Don't forget to give this repo a ✨ STAR!
 
-## Disclaimer
 
-This script is provided as-is and without warranty. Use at your own risk. The author is not responsible for any damages or losses caused by the use of this script.
+
+
